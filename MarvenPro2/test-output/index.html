@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-RegressionSuite" class="navigator-link ">
-                    <span>C:\Users\ADMIN\eclipse-workspace\MarvenPro2\testng.xml</span>
+                    <span>C:\Users\ADMIN\git\MyFirst-Project\MarvenPro2\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -174,34 +174,13 @@
                   <a name="verifyToCartButton">
                   </a> <!-- verifyToCartButton -->
                   <span class="method-name">verifyToCartButton</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[@class=&apos;shopping_cart_link&apos;]&quot;}
-  (Session info: chrome=105.0.5195.127)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DESKTOP-S9F8K9E&apos;, ip: &apos;192.168.43.18&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.1.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\ADMIN\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53240}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 133d52093b3aef10b4ebf456ae46175f
-*** Element info: {Using=xpath, value=//a[@class=&apos;shopping_cart_link&apos;]}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy17.click(Unknown Source)
-	at sauceDemo.HomePage.toCartButton(HomePage.java:31)
-	at test.VerifyHomePageButtons.verifyToCartButton(VerifyHomePageButtons.java:97)
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	expected [https://www.saucedemo.com/cart.htm] but found [https://www.saucedemo.com/cart.html]
+	at test.VerifyHomePageButtons.verifyToCartButton(VerifyHomePageButtons.java:114)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:833)
-... Removed 13 stack frames
+... Removed 12 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -210,33 +189,13 @@ Session ID: 133d52093b3aef10b4ebf456ae46175f
                   <a name="verifyToCartButton">
                   </a> <!-- verifyToCartButton -->
                   <span class="method-name">verifyToCartButton</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Unable to locate element: //a[@class=&apos;shopping_cart_link&apos;]
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DESKTOP-S9F8K9E&apos;, ip: &apos;192.168.43.18&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.1.1&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 105.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220915150737, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 13840, moz:profile: C:\Users\ADMIN\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: a15d17f8-2fe5-409e-845c-3bd6baf1cc7e
-*** Element info: {Using=xpath, value=//a[@class=&apos;shopping_cart_link&apos;]}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy17.click(Unknown Source)
-	at sauceDemo.HomePage.toCartButton(HomePage.java:31)
-	at test.VerifyHomePageButtons.verifyToCartButton(VerifyHomePageButtons.java:97)
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	expected [https://www.saucedemo.com/cart.htm] but found [https://www.saucedemo.com/cart.html]
+	at test.VerifyHomePageButtons.verifyToCartButton(VerifyHomePageButtons.java:114)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:833)
-... Removed 13 stack frames
+... Removed 12 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -245,34 +204,13 @@ Session ID: a15d17f8-2fe5-409e-845c-3bd6baf1cc7e
                   <a name="verifyaddToCartButton">
                   </a> <!-- verifyaddToCartButton -->
                   <span class="method-name">verifyaddToCartButton</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//button[text()=&apos;Add to cart&apos;])[1]&quot;}
-  (Session info: chrome=105.0.5195.127)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DESKTOP-S9F8K9E&apos;, ip: &apos;192.168.43.18&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.1.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\ADMIN\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53240}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 133d52093b3aef10b4ebf456ae46175f
-*** Element info: {Using=xpath, value=(//button[text()=&apos;Add to cart&apos;])[1]}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy17.click(Unknown Source)
-	at sauceDemo.HomePage.addToCartButton(HomePage.java:26)
-	at test.VerifyHomePageButtons.verifyaddToCartButton(VerifyHomePageButtons.java:78)
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	expected [https://www.saucedemo.com/inventory.htm] but found [https://www.saucedemo.com/inventory.html]
+	at test.VerifyHomePageButtons.verifyaddToCartButton(VerifyHomePageButtons.java:91)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:833)
-... Removed 13 stack frames
+... Removed 12 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -281,33 +219,13 @@ Session ID: 133d52093b3aef10b4ebf456ae46175f
                   <a name="verifyaddToCartButton">
                   </a> <!-- verifyaddToCartButton -->
                   <span class="method-name">verifyaddToCartButton</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Unable to locate element: (//button[text()=&apos;Add to cart&apos;])[1]
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DESKTOP-S9F8K9E&apos;, ip: &apos;192.168.43.18&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.1.1&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 105.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220915150737, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 13840, moz:profile: C:\Users\ADMIN\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: a15d17f8-2fe5-409e-845c-3bd6baf1cc7e
-*** Element info: {Using=xpath, value=(//button[text()=&apos;Add to cart&apos;])[1]}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy17.click(Unknown Source)
-	at sauceDemo.HomePage.addToCartButton(HomePage.java:26)
-	at test.VerifyHomePageButtons.verifyaddToCartButton(VerifyHomePageButtons.java:78)
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	expected [https://www.saucedemo.com/inventory.htm] but found [https://www.saucedemo.com/inventory.html]
+	at test.VerifyHomePageButtons.verifyaddToCartButton(VerifyHomePageButtons.java:91)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:833)
-... Removed 13 stack frames
+... Removed 12 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -352,7 +270,7 @@ Session ID: a15d17f8-2fe5-409e-845c-3bd6baf1cc7e
         </div> <!-- panel RegressionSuite -->
         <div panel-name="test-xml-RegressionSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\ADMIN\eclipse-workspace\MarvenPro2\testng.xml</span>
+            <span class="header-content">C:\Users\ADMIN\git\MyFirst-Project\MarvenPro2\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -415,42 +333,42 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(8);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verifyCancelButton')
-data.setCell(0, 2, 'test.VerifyOverviewPage')
-data.setCell(0, 3, 472);
+data.setCell(0, 1, 'verifyToCartButton')
+data.setCell(0, 2, 'test.VerifyHomePageButtons')
+data.setCell(0, 3, 975);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'verifyCancelButton')
-data.setCell(1, 2, 'test.VerifyOverviewPage')
-data.setCell(1, 3, 407);
+data.setCell(1, 1, 'verifyaddToCartButton')
+data.setCell(1, 2, 'test.VerifyHomePageButtons')
+data.setCell(1, 3, 858);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'verifyFinishButton')
-data.setCell(2, 2, 'test.VerifyOverviewPage')
-data.setCell(2, 3, 340);
+data.setCell(2, 1, 'verifyToCartButton')
+data.setCell(2, 2, 'test.VerifyHomePageButtons')
+data.setCell(2, 3, 817);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'verifyFinishButton')
-data.setCell(3, 2, 'test.VerifyOverviewPage')
-data.setCell(3, 3, 323);
+data.setCell(3, 1, 'verifyaddToCartButton')
+data.setCell(3, 2, 'test.VerifyHomePageButtons')
+data.setCell(3, 3, 726);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'verifyToCartButton')
-data.setCell(4, 2, 'test.VerifyHomePageButtons')
-data.setCell(4, 3, 181);
+data.setCell(4, 1, 'verifyCancelButton')
+data.setCell(4, 2, 'test.VerifyOverviewPage')
+data.setCell(4, 3, 676);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'verifyaddToCartButton')
-data.setCell(5, 2, 'test.VerifyHomePageButtons')
-data.setCell(5, 3, 41);
+data.setCell(5, 1, 'verifyCancelButton')
+data.setCell(5, 2, 'test.VerifyOverviewPage')
+data.setCell(5, 3, 561);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'verifyToCartButton')
-data.setCell(6, 2, 'test.VerifyHomePageButtons')
-data.setCell(6, 3, 35);
+data.setCell(6, 1, 'verifyFinishButton')
+data.setCell(6, 2, 'test.VerifyOverviewPage')
+data.setCell(6, 3, 339);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'verifyaddToCartButton')
-data.setCell(7, 2, 'test.VerifyHomePageButtons')
-data.setCell(7, 3, 15);
+data.setCell(7, 1, 'verifyFinishButton')
+data.setCell(7, 2, 'test.VerifyOverviewPage')
+data.setCell(7, 3, 333);
 window.suiteTableData['RegressionSuite']= { tableData: data, tableDiv: 'times-div-RegressionSuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 seconds</span>
+              <span class="suite-total-time">Total running time: 5 seconds</span>
               <div id="times-div-RegressionSuite">
               </div> <!-- times-div-RegressionSuite -->
             </div> <!-- times-div -->
@@ -486,35 +404,35 @@ return data;
               <div class="chronological-class-name">test.VerifyOverviewPage</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">launchMultipleBrowser(Chrome)</span>
-                <span class="method-start">4038 ms</span>
+                <span class="method-start">9728 ms</span>
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">test.VerifyHomePageButtons</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">beforeClass</span>
-                <span class="method-start">6184 ms</span>
+                <span class="method-start">12219 ms</span>
               </div> <!-- configuration-class before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">test.VerifyOverviewPage</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">beforeClass</span>
-                <span class="method-start">6201 ms</span>
+                <span class="method-start">12219 ms</span>
               </div> <!-- configuration-class before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">test.VerifyHomePageButtons</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">6362 ms</span>
+                <span class="method-start">12359 ms</span>
               </div> <!-- configuration-method before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">test.VerifyOverviewPage</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">6378 ms</span>
+                <span class="method-start">12390 ms</span>
               </div> <!-- configuration-method before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
@@ -523,139 +441,157 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">verifyToCartButton</span>
-                <span class="method-start">13580 ms</span>
+                <span class="method-start">19350 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">failCadeScreenshot([TestResult name=verifyToCartButton status=FAILURE method=VerifyHomePageButtons.verifyToCartButton()...)</span>
-                <span class="method-start">13777 ms</span>
+                <span class="method-start">20350 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">14401 ms</span>
+                <span class="method-start">22285 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">verifyaddToCartButton</span>
-                <span class="method-start">16445 ms</span>
+                <span class="method-start">23751 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">failCadeScreenshot([TestResult name=verifyaddToCartButton status=FAILURE method=VerifyHomePageButtons.verifyaddToCartBu...)</span>
-                <span class="method-start">16490 ms</span>
+                <span class="method-start">24519 ms</span>
               </div> <!-- configuration-method after -->
-              <div class="configuration-class after">
-                <span class="method-name">clearTheBrowser</span>
-                <span class="method-start">16698 ms</span>
-              </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">test.VerifyOverviewPage</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">verifyCancelButton</span>
-                <span class="method-start">19117 ms</span>
+                <span class="method-start">25214 ms</span>
               </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.VerifyHomePageButtons</div> <!-- chronological-class-name -->
+              <div class="configuration-class after">
+                <span class="method-name">clearTheBrowser</span>
+                <span class="method-start">25240 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.VerifyOverviewPage</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">19526 ms</span>
+                <span class="method-start">25898 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyFinishButton</span>
-                <span class="method-start">25776 ms</span>
+                <span class="method-start">32516 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">closeTheBrowser</span>
-                <span class="method-start">26118 ms</span>
+                <span class="method-start">32857 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">test.VerifyHomePageButtons</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">closeTheBrowser</span>
-                <span class="method-start">32070 ms</span>
+                <span class="method-start">34875 ms</span>
               </div> <!-- configuration-test after -->
               <div class="configuration-test before">
                 <span class="method-name">launchMultipleBrowser(Firefox)</span>
-                <span class="method-start">34000 ms</span>
+                <span class="method-start">37694 ms</span>
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">test.VerifyOverviewPage</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">launchMultipleBrowser(Firefox)</span>
-                <span class="method-start">42121 ms</span>
+                <span class="method-start">53776 ms</span>
               </div> <!-- configuration-test before -->
-              <div class="configuration-class before">
-                <span class="method-name">beforeClass</span>
-                <span class="method-start">50268 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="configuration-method before">
-                <span class="method-name">beforeMethod</span>
-                <span class="method-start">50278 ms</span>
-              </div> <!-- configuration-method before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">test.VerifyHomePageButtons</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">beforeClass</span>
-                <span class="method-start">50282 ms</span>
+                <span class="method-start">72770 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">50288 ms</span>
+                <span class="method-start">72774 ms</span>
               </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.VerifyOverviewPage</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeClass</span>
+                <span class="method-start">72787 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">72791 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.VerifyHomePageButtons</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">verifyToCartButton</span>
-                <span class="method-start">53976 ms</span>
+                <span class="method-start">78566 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">failCadeScreenshot([TestResult name=verifyToCartButton status=FAILURE method=VerifyHomePageButtons.verifyToCartButton()...)</span>
-                <span class="method-start">54014 ms</span>
+                <span class="method-start">79539 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">54277 ms</span>
+                <span class="method-start">79990 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">verifyaddToCartButton</span>
-                <span class="method-start">56464 ms</span>
+                <span class="method-start">82102 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">failCadeScreenshot([TestResult name=verifyaddToCartButton status=FAILURE method=VerifyHomePageButtons.verifyaddToCartBu...)</span>
-                <span class="method-start">56482 ms</span>
+                <span class="method-start">82970 ms</span>
               </div> <!-- configuration-method after -->
-              <div class="configuration-class after">
-                <span class="method-name">clearTheBrowser</span>
-                <span class="method-start">56619 ms</span>
-              </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">test.VerifyOverviewPage</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">verifyCancelButton</span>
-                <span class="method-start">58471 ms</span>
+                <span class="method-start">83493 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">58947 ms</span>
+                <span class="method-start">84056 ms</span>
               </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.VerifyHomePageButtons</div> <!-- chronological-class-name -->
+              <div class="configuration-class after">
+                <span class="method-name">clearTheBrowser</span>
+                <span class="method-start">84289 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.VerifyOverviewPage</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">verifyFinishButton</span>
-                <span class="method-start">65097 ms</span>
+                <span class="method-start">90250 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">closeTheBrowser</span>
-                <span class="method-start">65421 ms</span>
+                <span class="method-start">90585 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">test.VerifyHomePageButtons</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">closeTheBrowser</span>
-                <span class="method-start">69368 ms</span>
+                <span class="method-start">96003 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

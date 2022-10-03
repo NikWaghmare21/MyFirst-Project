@@ -61,8 +61,13 @@ public class VerifyHomePageButtons extends Base {
 		driver.get("https://www.saucedemo.com/");
 		
 		String usenName=Utility.excelFetch("LoginDetails",0,0);
-		String password=Utility.excelFetch("LoginDetails",1,0);
+		
 		loginpage.sendUserName(usenName);
+		
+		
+		
+		String password=Utility.excelFetch("LoginDetails",1,0);
+		
 		loginpage.sendPasswordAndLogin(password);
 		
 		soft=new SoftAssert();
@@ -98,6 +103,9 @@ public class VerifyHomePageButtons extends Base {
 		
 		
 		String expectedUrl=Utility.excelFetch("Property",2,0);
+		
+		
+		
 		String expectedTitle=Utility.excelFetch("Property",1,1);
 		
 		soft.assertEquals(url,expectedUrl);
@@ -109,8 +117,10 @@ public class VerifyHomePageButtons extends Base {
 	
 	@AfterMethod
 	public void failCadeScreenshot(ITestResult result) throws Throwable {
+		
 		if(ITestResult.FAILURE == result.getStatus()) {
-			Utility.captureScreenshot(driver,+testID);
+			
+			Utility.captureScreenshot(driver,testID);
 		}
 		
 	}

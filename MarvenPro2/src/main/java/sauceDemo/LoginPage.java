@@ -28,6 +28,7 @@ public class LoginPage {
 	}
 	
 	public void sendUserName(String username) throws Exception {
+		
 		userName.sendKeys(username);
 		
 			
