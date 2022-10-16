@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="8" passed="4" failed="4" skipped="0">
+<testng-results ignored="0" total="8" passed="0" failed="0" skipped="8">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-09-30T17:49:13 IST" name="RegressionSuite" finished-at="2022-09-30T17:50:55 IST" duration-ms="101427">
+  <suite started-at="2022-10-09T08:53:54 IST" name="RegressionSuite" finished-at="2022-10-09T08:54:05 IST" duration-ms="11612">
     <groups>
     </groups>
-    <test started-at="2022-09-30T17:49:13 IST" name="ChromeTest" finished-at="2022-09-30T17:49:51 IST" duration-ms="37646">
+    <test started-at="2022-10-09T08:53:54 IST" name="ChromeTest" finished-at="2022-10-09T08:54:02 IST" duration-ms="8605">
       <class name="test.VerifyHomePageButtons">
-        <test-method is-config="true" signature="launchMultipleBrowser(java.lang.String)[pri:0, instance:test.VerifyHomePageButtons@515aebb0]" started-at="2022-09-30T17:49:13 IST" name="launchMultipleBrowser" finished-at="2022-09-30T17:49:23 IST" duration-ms="9725" status="PASS">
+        <test-method is-config="true" signature="launchMultipleBrowser(java.lang.String)[pri:0, instance:test.VerifyHomePageButtons@2a798d51]" started-at="2022-10-09T08:53:54 IST" name="launchMultipleBrowser" finished-at="2022-10-09T08:53:58 IST" duration-ms="4337" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,30 +18,31 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchMultipleBrowser -->
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:test.VerifyHomePageButtons@515aebb0]" started-at="2022-09-30T17:49:26 IST" name="beforeClass" finished-at="2022-09-30T17:49:26 IST" duration-ms="111" status="PASS">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:test.VerifyHomePageButtons@2a798d51]" started-at="2022-10-09T08:54:00 IST" name="beforeClass" finished-at="2022-10-09T08:54:00 IST" duration-ms="119" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:test.VerifyHomePageButtons@515aebb0]" started-at="2022-09-30T17:49:26 IST" name="beforeMethod" finished-at="2022-09-30T17:49:33 IST" duration-ms="6990" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="verifyToCartButton()[pri:0, instance:test.VerifyHomePageButtons@515aebb0]" started-at="2022-09-30T17:49:33 IST" name="verifyToCartButton" finished-at="2022-09-30T17:49:34 IST" duration-ms="975" status="FAIL">
-          <exception class="java.lang.AssertionError">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:test.VerifyHomePageButtons@2a798d51]" started-at="2022-10-09T08:54:00 IST" name="beforeMethod" finished-at="2022-10-09T08:54:02 IST" duration-ms="2504" status="FAIL">
+          <exception class="java.io.FileNotFoundException">
             <message>
-              <![CDATA[The following asserts failed:
-expected [https://www.saucedemo.com/cart.htm] but found [https://www.saucedemo.com/cart.html]]]>
+              <![CDATA[C:\Users\ADMIN\Desktop\Software Testing\Excel Fetch.xlsx (The system cannot find the path specified)]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: The following asserts failed:
-expected [https://www.saucedemo.com/cart.htm] but found [https://www.saucedemo.com/cart.html]
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
-at test.VerifyHomePageButtons.verifyToCartButton(VerifyHomePageButtons.java:114)
+              <![CDATA[java.io.FileNotFoundException: C:\Users\ADMIN\Desktop\Software Testing\Excel Fetch.xlsx (The system cannot find the path specified)
+at java.base/java.io.FileInputStream.open0(Native Method)
+at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:111)
+at utilis.Utility.excelFetch(Utility.java:37)
+at test.VerifyHomePageButtons.beforeMethod(VerifyHomePageButtons.java:75)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 at java.base/java.lang.reflect.Method.invoke(Method.java:577)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
 at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
 at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
 at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
@@ -53,41 +54,75 @@ at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecut
 at java.base/java.lang.Thread.run(Thread.java:833)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- java.io.FileNotFoundException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifyToCartButton()[pri:0, instance:test.VerifyHomePageButtons@2a798d51]" started-at="2022-10-09T08:54:02 IST" name="verifyToCartButton" finished-at="2022-10-09T08:54:02 IST" duration-ms="0" status="SKIP">
+          <exception class="java.io.FileNotFoundException">
+            <message>
+              <![CDATA[C:\Users\ADMIN\Desktop\Software Testing\Excel Fetch.xlsx (The system cannot find the path specified)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.FileNotFoundException: C:\Users\ADMIN\Desktop\Software Testing\Excel Fetch.xlsx (The system cannot find the path specified)
+at java.base/java.io.FileInputStream.open0(Native Method)
+at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:111)
+at utilis.Utility.excelFetch(Utility.java:37)
+at test.VerifyHomePageButtons.beforeMethod(VerifyHomePageButtons.java:75)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.FileNotFoundException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyToCartButton -->
-        <test-method is-config="true" signature="failCadeScreenshot(org.testng.ITestResult)[pri:0, instance:test.VerifyHomePageButtons@515aebb0]" started-at="2022-09-30T17:49:34 IST" name="failCadeScreenshot" finished-at="2022-09-30T17:49:36 IST" duration-ms="1933" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyToCartButton status=FAILURE method=VerifyHomePageButtons.verifyToCartButton()[pri:0, instance:test.VerifyHomePageButtons@515aebb0] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="failCadeScreenshot(org.testng.ITestResult)[pri:0, instance:test.VerifyHomePageButtons@2a798d51]" started-at="2022-10-09T08:54:02 IST" name="failCadeScreenshot" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1665285842954" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- failCadeScreenshot -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:test.VerifyHomePageButtons@515aebb0]" started-at="2022-09-30T17:49:36 IST" name="beforeMethod" finished-at="2022-09-30T17:49:37 IST" duration-ms="1466" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:test.VerifyHomePageButtons@2a798d51]" started-at="2022-10-09T08:54:02 IST" name="beforeMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1665285842959" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="verifyaddToCartButton()[pri:0, instance:test.VerifyHomePageButtons@515aebb0]" started-at="2022-09-30T17:49:37 IST" name="verifyaddToCartButton" finished-at="2022-09-30T17:49:38 IST" duration-ms="726" status="FAIL">
-          <exception class="java.lang.AssertionError">
+        <test-method signature="verifyaddToCartButton()[pri:0, instance:test.VerifyHomePageButtons@2a798d51]" started-at="2022-10-09T08:54:02 IST" name="verifyaddToCartButton" finished-at="2022-10-09T08:54:02 IST" duration-ms="0" status="SKIP">
+          <exception class="java.io.FileNotFoundException">
             <message>
-              <![CDATA[The following asserts failed:
-expected [https://www.saucedemo.com/inventory.htm] but found [https://www.saucedemo.com/inventory.html]]]>
+              <![CDATA[C:\Users\ADMIN\Desktop\Software Testing\Excel Fetch.xlsx (The system cannot find the path specified)]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: The following asserts failed:
-expected [https://www.saucedemo.com/inventory.htm] but found [https://www.saucedemo.com/inventory.html]
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
-at test.VerifyHomePageButtons.verifyaddToCartButton(VerifyHomePageButtons.java:91)
+              <![CDATA[java.io.FileNotFoundException: C:\Users\ADMIN\Desktop\Software Testing\Excel Fetch.xlsx (The system cannot find the path specified)
+at java.base/java.io.FileInputStream.open0(Native Method)
+at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:111)
+at utilis.Utility.excelFetch(Utility.java:37)
+at test.VerifyHomePageButtons.beforeMethod(VerifyHomePageButtons.java:75)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 at java.base/java.lang.reflect.Method.invoke(Method.java:577)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
 at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
 at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
 at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
@@ -99,32 +134,25 @@ at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecut
 at java.base/java.lang.Thread.run(Thread.java:833)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- java.io.FileNotFoundException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyaddToCartButton -->
-        <test-method is-config="true" signature="failCadeScreenshot(org.testng.ITestResult)[pri:0, instance:test.VerifyHomePageButtons@515aebb0]" started-at="2022-09-30T17:49:38 IST" name="failCadeScreenshot" finished-at="2022-09-30T17:49:39 IST" duration-ms="720" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyaddToCartButton status=FAILURE method=VerifyHomePageButtons.verifyaddToCartButton()[pri:0, instance:test.VerifyHomePageButtons@515aebb0] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="failCadeScreenshot(org.testng.ITestResult)[pri:0, instance:test.VerifyHomePageButtons@2a798d51]" started-at="2022-10-09T08:54:02 IST" name="failCadeScreenshot" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1665285842965" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- failCadeScreenshot -->
-        <test-method is-config="true" signature="clearTheBrowser()[pri:0, instance:test.VerifyHomePageButtons@515aebb0]" started-at="2022-09-30T17:49:39 IST" name="clearTheBrowser" finished-at="2022-09-30T17:49:39 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="clearTheBrowser()[pri:0, instance:test.VerifyHomePageButtons@2a798d51]" started-at="2022-10-09T08:54:02 IST" name="clearTheBrowser" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1665285842967" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clearTheBrowser -->
-        <test-method is-config="true" signature="closeTheBrowser()[pri:0, instance:test.VerifyHomePageButtons@515aebb0]" started-at="2022-09-30T17:49:48 IST" name="closeTheBrowser" finished-at="2022-09-30T17:49:51 IST" duration-ms="2747" status="PASS">
+        <test-method is-config="true" signature="closeTheBrowser()[pri:0, instance:test.VerifyHomePageButtons@2a798d51]" started-at="2022-10-09T08:54:02 IST" name="closeTheBrowser" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1665285842974" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeTheBrowser -->
       </class> <!-- test.VerifyHomePageButtons -->
       <class name="test.VerifyOverviewPage">
-        <test-method is-config="true" signature="launchMultipleBrowser(java.lang.String)[pri:0, instance:test.VerifyOverviewPage@595b007d]" started-at="2022-09-30T17:49:23 IST" name="launchMultipleBrowser" finished-at="2022-09-30T17:49:26 IST" duration-ms="2445" status="PASS">
+        <test-method is-config="true" signature="launchMultipleBrowser(java.lang.String)[pri:0, instance:test.VerifyOverviewPage@222545dc]" started-at="2022-10-09T08:53:58 IST" name="launchMultipleBrowser" finished-at="2022-10-09T08:54:00 IST" duration-ms="1550" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -135,35 +163,131 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchMultipleBrowser -->
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:test.VerifyOverviewPage@595b007d]" started-at="2022-09-30T17:49:26 IST" name="beforeClass" finished-at="2022-09-30T17:49:26 IST" duration-ms="169" status="PASS">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:test.VerifyOverviewPage@222545dc]" started-at="2022-10-09T08:54:00 IST" name="beforeClass" finished-at="2022-10-09T08:54:00 IST" duration-ms="149" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:test.VerifyOverviewPage@595b007d]" started-at="2022-09-30T17:49:26 IST" name="beforeMethod" finished-at="2022-09-30T17:49:39 IST" duration-ms="12824" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:test.VerifyOverviewPage@222545dc]" started-at="2022-10-09T08:54:00 IST" name="beforeMethod" finished-at="2022-10-09T08:54:02 IST" duration-ms="2423" status="FAIL">
+          <exception class="java.io.FileNotFoundException">
+            <message>
+              <![CDATA[C:\Users\ADMIN\Desktop\Software Testing\Excel Fetch.xlsx (The system cannot find the path specified)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.FileNotFoundException: C:\Users\ADMIN\Desktop\Software Testing\Excel Fetch.xlsx (The system cannot find the path specified)
+at java.base/java.io.FileInputStream.open0(Native Method)
+at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:111)
+at utilis.Utility.excelFetch(Utility.java:37)
+at test.VerifyOverviewPage.beforeMethod(VerifyOverviewPage.java:67)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.FileNotFoundException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="verifyCancelButton()[pri:0, instance:test.VerifyOverviewPage@595b007d]" started-at="2022-09-30T17:49:39 IST" name="verifyCancelButton" finished-at="2022-09-30T17:49:39 IST" duration-ms="676" status="PASS">
+        <test-method signature="verifyCancelButton()[pri:0, instance:test.VerifyOverviewPage@222545dc]" started-at="2022-10-09T08:54:02 IST" name="verifyCancelButton" finished-at="2022-10-09T08:54:02 IST" duration-ms="0" status="SKIP">
+          <exception class="java.io.FileNotFoundException">
+            <message>
+              <![CDATA[C:\Users\ADMIN\Desktop\Software Testing\Excel Fetch.xlsx (The system cannot find the path specified)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.FileNotFoundException: C:\Users\ADMIN\Desktop\Software Testing\Excel Fetch.xlsx (The system cannot find the path specified)
+at java.base/java.io.FileInputStream.open0(Native Method)
+at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:111)
+at utilis.Utility.excelFetch(Utility.java:37)
+at test.VerifyOverviewPage.beforeMethod(VerifyOverviewPage.java:67)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.FileNotFoundException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyCancelButton -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:test.VerifyOverviewPage@595b007d]" started-at="2022-09-30T17:49:39 IST" name="beforeMethod" finished-at="2022-09-30T17:49:46 IST" duration-ms="6618" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:test.VerifyOverviewPage@222545dc]" started-at="2022-10-09T08:54:02 IST" name="beforeMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1665285842917" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="verifyFinishButton()[pri:0, instance:test.VerifyOverviewPage@595b007d]" started-at="2022-09-30T17:49:46 IST" name="verifyFinishButton" finished-at="2022-09-30T17:49:46 IST" duration-ms="339" status="PASS">
+        <test-method signature="verifyFinishButton()[pri:0, instance:test.VerifyOverviewPage@222545dc]" started-at="2022-10-09T08:54:02 IST" name="verifyFinishButton" finished-at="2022-10-09T08:54:02 IST" duration-ms="0" status="SKIP">
+          <exception class="java.io.FileNotFoundException">
+            <message>
+              <![CDATA[C:\Users\ADMIN\Desktop\Software Testing\Excel Fetch.xlsx (The system cannot find the path specified)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.FileNotFoundException: C:\Users\ADMIN\Desktop\Software Testing\Excel Fetch.xlsx (The system cannot find the path specified)
+at java.base/java.io.FileInputStream.open0(Native Method)
+at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:111)
+at utilis.Utility.excelFetch(Utility.java:37)
+at test.VerifyOverviewPage.beforeMethod(VerifyOverviewPage.java:67)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.FileNotFoundException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyFinishButton -->
-        <test-method is-config="true" signature="closeTheBrowser()[pri:0, instance:test.VerifyOverviewPage@595b007d]" started-at="2022-09-30T17:49:46 IST" name="closeTheBrowser" finished-at="2022-09-30T17:49:48 IST" duration-ms="2015" status="PASS">
+        <test-method is-config="true" signature="closeTheBrowser()[pri:0, instance:test.VerifyOverviewPage@222545dc]" started-at="2022-10-09T08:54:02 IST" name="closeTheBrowser" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1665285842931" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeTheBrowser -->
       </class> <!-- test.VerifyOverviewPage -->
     </test> <!-- ChromeTest -->
-    <test started-at="2022-09-30T17:49:51 IST" name="FirefoxTest" finished-at="2022-09-30T17:50:55 IST" duration-ms="63715">
+    <test started-at="2022-10-09T08:54:03 IST" name="FirefoxTest" finished-at="2022-10-09T08:54:05 IST" duration-ms="2853">
       <class name="test.VerifyHomePageButtons">
-        <test-method is-config="true" signature="launchMultipleBrowser(java.lang.String)[pri:0, instance:test.VerifyHomePageButtons@313ac989]" started-at="2022-09-30T17:49:51 IST" name="launchMultipleBrowser" finished-at="2022-09-30T17:50:07 IST" duration-ms="16081" status="PASS">
+        <test-method is-config="true" signature="launchMultipleBrowser(java.lang.String)[pri:0, instance:test.VerifyHomePageButtons@799f10e1]" started-at="2022-10-09T08:54:03 IST" name="launchMultipleBrowser" finished-at="2022-10-09T08:54:05 IST" duration-ms="2762" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -171,147 +295,397 @@ at java.base/java.lang.Thread.run(Thread.java:833)
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[Process unexpectedly closed with status 0
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-S9F8K9E', ip: '192.168.43.18', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: driver.version: FirefoxDriver
+remote stacktrace: ]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: Process unexpectedly closed with status 0
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-S9F8K9E', ip: '192.168.43.18', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: driver.version: FirefoxDriver
+remote stacktrace: 
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1002)
+at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:147)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:125)
+at setup.Base.openFirefoxBroswer(Base.java:24)
+at test.VerifyHomePageButtons.launchMultipleBrowser(VerifyHomePageButtons.java:57)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+at org.testng.TestRunner.run(TestRunner.java:589)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchMultipleBrowser -->
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:test.VerifyHomePageButtons@313ac989]" started-at="2022-09-30T17:50:26 IST" name="beforeClass" finished-at="2022-09-30T17:50:26 IST" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:test.VerifyHomePageButtons@799f10e1]" started-at="2022-10-09T08:54:05 IST" name="beforeClass" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1665285845918" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:test.VerifyHomePageButtons@313ac989]" started-at="2022-09-30T17:50:26 IST" name="beforeMethod" finished-at="2022-09-30T17:50:32 IST" duration-ms="5792" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:test.VerifyHomePageButtons@799f10e1]" started-at="2022-10-09T08:54:05 IST" name="beforeMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1665285845929" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="verifyToCartButton()[pri:0, instance:test.VerifyHomePageButtons@313ac989]" started-at="2022-09-30T17:50:32 IST" name="verifyToCartButton" finished-at="2022-09-30T17:50:33 IST" duration-ms="817" status="FAIL">
-          <exception class="java.lang.AssertionError">
+        <test-method signature="verifyToCartButton()[pri:0, instance:test.VerifyHomePageButtons@799f10e1]" started-at="2022-10-09T08:54:05 IST" name="verifyToCartButton" finished-at="2022-10-09T08:54:05 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.WebDriverException">
             <message>
-              <![CDATA[The following asserts failed:
-expected [https://www.saucedemo.com/cart.htm] but found [https://www.saucedemo.com/cart.html]]]>
+              <![CDATA[Process unexpectedly closed with status 0
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-S9F8K9E', ip: '192.168.43.18', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: driver.version: FirefoxDriver
+remote stacktrace: ]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: The following asserts failed:
-expected [https://www.saucedemo.com/cart.htm] but found [https://www.saucedemo.com/cart.html]
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
-at test.VerifyHomePageButtons.verifyToCartButton(VerifyHomePageButtons.java:114)
+              <![CDATA[org.openqa.selenium.WebDriverException: Process unexpectedly closed with status 0
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-S9F8K9E', ip: '192.168.43.18', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: driver.version: FirefoxDriver
+remote stacktrace: 
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1002)
+at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:147)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:125)
+at setup.Base.openFirefoxBroswer(Base.java:24)
+at test.VerifyHomePageButtons.launchMultipleBrowser(VerifyHomePageButtons.java:57)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 at java.base/java.lang.reflect.Method.invoke(Method.java:577)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+at org.testng.TestRunner.run(TestRunner.java:589)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyToCartButton -->
-        <test-method is-config="true" signature="failCadeScreenshot(org.testng.ITestResult)[pri:0, instance:test.VerifyHomePageButtons@313ac989]" started-at="2022-09-30T17:50:33 IST" name="failCadeScreenshot" finished-at="2022-09-30T17:50:33 IST" duration-ms="450" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyToCartButton status=FAILURE method=VerifyHomePageButtons.verifyToCartButton()[pri:0, instance:test.VerifyHomePageButtons@313ac989] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="failCadeScreenshot(org.testng.ITestResult)[pri:0, instance:test.VerifyHomePageButtons@799f10e1]" started-at="2022-10-09T08:54:05 IST" name="failCadeScreenshot" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1665285845961" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- failCadeScreenshot -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:test.VerifyHomePageButtons@313ac989]" started-at="2022-09-30T17:50:33 IST" name="beforeMethod" finished-at="2022-09-30T17:50:35 IST" duration-ms="2111" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:test.VerifyHomePageButtons@799f10e1]" started-at="2022-10-09T08:54:05 IST" name="beforeMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1665285845964" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="verifyaddToCartButton()[pri:0, instance:test.VerifyHomePageButtons@313ac989]" started-at="2022-09-30T17:50:35 IST" name="verifyaddToCartButton" finished-at="2022-09-30T17:50:36 IST" duration-ms="858" status="FAIL">
-          <exception class="java.lang.AssertionError">
+        <test-method signature="verifyaddToCartButton()[pri:0, instance:test.VerifyHomePageButtons@799f10e1]" started-at="2022-10-09T08:54:05 IST" name="verifyaddToCartButton" finished-at="2022-10-09T08:54:05 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.WebDriverException">
             <message>
-              <![CDATA[The following asserts failed:
-expected [https://www.saucedemo.com/inventory.htm] but found [https://www.saucedemo.com/inventory.html]]]>
+              <![CDATA[Process unexpectedly closed with status 0
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-S9F8K9E', ip: '192.168.43.18', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: driver.version: FirefoxDriver
+remote stacktrace: ]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: The following asserts failed:
-expected [https://www.saucedemo.com/inventory.htm] but found [https://www.saucedemo.com/inventory.html]
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
-at test.VerifyHomePageButtons.verifyaddToCartButton(VerifyHomePageButtons.java:91)
+              <![CDATA[org.openqa.selenium.WebDriverException: Process unexpectedly closed with status 0
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-S9F8K9E', ip: '192.168.43.18', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: driver.version: FirefoxDriver
+remote stacktrace: 
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1002)
+at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:147)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:125)
+at setup.Base.openFirefoxBroswer(Base.java:24)
+at test.VerifyHomePageButtons.launchMultipleBrowser(VerifyHomePageButtons.java:57)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 at java.base/java.lang.reflect.Method.invoke(Method.java:577)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+at org.testng.TestRunner.run(TestRunner.java:589)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyaddToCartButton -->
-        <test-method is-config="true" signature="failCadeScreenshot(org.testng.ITestResult)[pri:0, instance:test.VerifyHomePageButtons@313ac989]" started-at="2022-09-30T17:50:36 IST" name="failCadeScreenshot" finished-at="2022-09-30T17:50:38 IST" duration-ms="1319" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyaddToCartButton status=FAILURE method=VerifyHomePageButtons.verifyaddToCartButton()[pri:0, instance:test.VerifyHomePageButtons@313ac989] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="failCadeScreenshot(org.testng.ITestResult)[pri:0, instance:test.VerifyHomePageButtons@799f10e1]" started-at="2022-10-09T08:54:05 IST" name="failCadeScreenshot" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1665285845977" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- failCadeScreenshot -->
-        <test-method is-config="true" signature="clearTheBrowser()[pri:0, instance:test.VerifyHomePageButtons@313ac989]" started-at="2022-09-30T17:50:38 IST" name="clearTheBrowser" finished-at="2022-09-30T17:50:38 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="clearTheBrowser()[pri:0, instance:test.VerifyHomePageButtons@799f10e1]" started-at="2022-10-09T08:54:05 IST" name="clearTheBrowser" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1665285845979" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clearTheBrowser -->
-        <test-method is-config="true" signature="closeTheBrowser()[pri:0, instance:test.VerifyHomePageButtons@313ac989]" started-at="2022-09-30T17:50:49 IST" name="closeTheBrowser" finished-at="2022-09-30T17:50:55 IST" duration-ms="5400" status="PASS">
+        <test-method is-config="true" signature="closeTheBrowser()[pri:0, instance:test.VerifyHomePageButtons@799f10e1]" started-at="2022-10-09T08:54:05 IST" name="closeTheBrowser" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1665285845983" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeTheBrowser -->
       </class> <!-- test.VerifyHomePageButtons -->
       <class name="test.VerifyOverviewPage">
-        <test-method is-config="true" signature="launchMultipleBrowser(java.lang.String)[pri:0, instance:test.VerifyOverviewPage@4562e04d]" started-at="2022-09-30T17:50:07 IST" name="launchMultipleBrowser" finished-at="2022-09-30T17:50:26 IST" duration-ms="18968" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Firefox]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="launchMultipleBrowser(java.lang.String)[pri:0, instance:test.VerifyOverviewPage@4c371370]" started-at="2022-10-09T08:54:05 IST" name="launchMultipleBrowser" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1665285845901" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchMultipleBrowser -->
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:test.VerifyOverviewPage@4562e04d]" started-at="2022-09-30T17:50:26 IST" name="beforeClass" finished-at="2022-09-30T17:50:26 IST" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:test.VerifyOverviewPage@4c371370]" started-at="2022-10-09T08:54:05 IST" name="beforeClass" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1665285845916" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:test.VerifyOverviewPage@4562e04d]" started-at="2022-09-30T17:50:26 IST" name="beforeMethod" finished-at="2022-09-30T17:50:37 IST" duration-ms="10702" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:test.VerifyOverviewPage@4c371370]" started-at="2022-10-09T08:54:05 IST" name="beforeMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1665285845922" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="verifyCancelButton()[pri:0, instance:test.VerifyOverviewPage@4562e04d]" started-at="2022-09-30T17:50:37 IST" name="verifyCancelButton" finished-at="2022-09-30T17:50:37 IST" duration-ms="561" status="PASS">
+        <test-method signature="verifyCancelButton()[pri:0, instance:test.VerifyOverviewPage@4c371370]" started-at="2022-10-09T08:54:05 IST" name="verifyCancelButton" finished-at="2022-10-09T08:54:05 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[Process unexpectedly closed with status 0
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-S9F8K9E', ip: '192.168.43.18', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: driver.version: FirefoxDriver
+remote stacktrace: ]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: Process unexpectedly closed with status 0
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-S9F8K9E', ip: '192.168.43.18', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: driver.version: FirefoxDriver
+remote stacktrace: 
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1002)
+at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:147)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:125)
+at setup.Base.openFirefoxBroswer(Base.java:24)
+at test.VerifyHomePageButtons.launchMultipleBrowser(VerifyHomePageButtons.java:57)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+at org.testng.TestRunner.run(TestRunner.java:589)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyCancelButton -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:test.VerifyOverviewPage@4562e04d]" started-at="2022-09-30T17:50:37 IST" name="beforeMethod" finished-at="2022-09-30T17:50:44 IST" duration-ms="6194" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:test.VerifyOverviewPage@4c371370]" started-at="2022-10-09T08:54:05 IST" name="beforeMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1665285845932" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="verifyFinishButton()[pri:0, instance:test.VerifyOverviewPage@4562e04d]" started-at="2022-09-30T17:50:44 IST" name="verifyFinishButton" finished-at="2022-09-30T17:50:44 IST" duration-ms="333" status="PASS">
+        <test-method signature="verifyFinishButton()[pri:0, instance:test.VerifyOverviewPage@4c371370]" started-at="2022-10-09T08:54:05 IST" name="verifyFinishButton" finished-at="2022-10-09T08:54:05 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[Process unexpectedly closed with status 0
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-S9F8K9E', ip: '192.168.43.18', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: driver.version: FirefoxDriver
+remote stacktrace: ]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: Process unexpectedly closed with status 0
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-S9F8K9E', ip: '192.168.43.18', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: driver.version: FirefoxDriver
+remote stacktrace: 
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1002)
+at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:147)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:125)
+at setup.Base.openFirefoxBroswer(Base.java:24)
+at test.VerifyHomePageButtons.launchMultipleBrowser(VerifyHomePageButtons.java:57)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+at org.testng.TestRunner.run(TestRunner.java:589)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyFinishButton -->
-        <test-method is-config="true" signature="closeTheBrowser()[pri:0, instance:test.VerifyOverviewPage@4562e04d]" started-at="2022-09-30T17:50:44 IST" name="closeTheBrowser" finished-at="2022-09-30T17:50:49 IST" duration-ms="5417" status="PASS">
+        <test-method is-config="true" signature="closeTheBrowser()[pri:0, instance:test.VerifyOverviewPage@4c371370]" started-at="2022-10-09T08:54:05 IST" name="closeTheBrowser" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1665285845954" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeTheBrowser -->

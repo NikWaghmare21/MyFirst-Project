@@ -17,6 +17,10 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
+
 import sauceDemo.Details;
 import sauceDemo.HomePage;
 import sauceDemo.LoginPage;
@@ -32,10 +36,18 @@ public class VerifyHomePageButtons extends Base {
 	private SoftAssert soft;
 	private LoginPage loginpage;
 	private int testID;
+	static ExtentTest test;
+	static ExtentHtmlReporter reporter;
+	
 	
 	@Parameters("browser")
 	@BeforeTest
 	public void launchMultipleBrowser(String browserName) {
+		
+		reporter = new ExtentHtmlReporter("test-output/ExtendReport/Extent.html");
+		ExtentReports extend = new ExtentReports();
+		extend.attachReporter(reporter);
+		
 		
 		if(browserName.equals("Chrome")) {
 			driver=openChromeBroswer();
